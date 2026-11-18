@@ -3,6 +3,8 @@
 Streamlit decision-intelligence dashboard (glassmorphism UI) that predicts shipping lead time,
 simulates moving each product to alternative factories, and ranks reassignment recommendations.
 
+[Open the live app](https://pukzms5ha74jztyvpga5p8.streamlit.app/).
+
 ## Run
 
 ```bash
