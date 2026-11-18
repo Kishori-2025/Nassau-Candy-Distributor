@@ -7,10 +7,22 @@ simulates moving each product to alternative factories, and ranks reassignment r
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate          # Windows  (macOS/Linux: source .venv/bin/activate)
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## Deploy on Streamlit Community Cloud
+
+1. Push this repository to GitHub. Keep `data/Nassau Candy Distributor.csv` in the repository;
+   the app loads it using a path relative to `config.py`.
+2. Sign in at [share.streamlit.io](https://share.streamlit.io/) with GitHub and select **Create app**.
+3. Choose this repository, the `main` branch, and `app.py` as the app file, then deploy.
+
+The app's dependencies are listed in `requirements.txt`, and its theme is configured in
+`.streamlit/config.toml`. Do not commit credentials or `.streamlit/secrets.toml`; add deployment
+secrets in the app's Streamlit Cloud settings if needed.
 
 ## Project layout
 
